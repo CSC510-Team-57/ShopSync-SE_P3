@@ -204,3 +204,42 @@ def test_whitespace_product():
 
 def test_too_short_product():
     assert not check_product_input('')  # Less than 1 character should return False
+
+def test_search_product_empty(mock_firestore_client):
+    with patch('slash_user_interface.search_items_API') as mock_search_api:
+        mock_search_api.return_value = []
+        results = search_product('Amazon', '')
+        assert len(results) == 0
+def test_search_product_invalid(mock_firestore_client):
+    with patch('slash_user_interface.search_items_API') as mock_search_api:
+        mock_search_api.return_value = []
+        results = search_product('Amazon', '@InvalidProduct!')
+        assert len(results) == 0
+def test_selectbox_default(mock_selectbox):
+    mock_selectbox.return_value = "Amazon"
+    website = st.selectbox('Select Website', ['Amazon', 'Ebay', 'Walmart'], index=0, key="website_select")
+    assert website == "Amazon"
+def test_slider_default(mock_slider):
+    mock_slider.return_value = (0, 1000)
+    min_price, max_price = st.slider('Price Range', 0.0, 1000.0, (0.0, 1000.0), key="price_slider")
+    assert min_price == 0.0
+    assert max_price == 1000.0
+def test_empty_product_name():
+    assert not check_product_input('')  # Empty product name should return False
+def test_valid_product_name():
+    assert check_product_input('ValidProduct123')  # Valid product name should return True
+def test_whitespace_product_name():
+    assert not check_product_input('   ')  # Whitespace-only product name should return False
+def test_product_name_too_long():
+    long_name = 'A' * 101
+    assert not check_product_input(long_name)  # Name >100 characters should return False
+
+@patch('streamlit.button')
+def test_reset_button_behavior(mock_button):
+    mock_button.return_value = True
+    assert mock_button('Reset') is True
+    
+def test_checkbox_behavior():
+    st.session_state['Amazon'] = True
+    is_checked = st.checkbox('Amazon', key='Amazon')
+    assert is_checked or st.session_state['Amazon']

@@ -46,10 +46,11 @@ class TestFavouritesFunctions(unittest.TestCase):
         self.mock_document.get.return_value.exists = True
         self.mock_document.get.return_value.to_dict.return_value = {
             "Description": ["Favorite Item 1", "Favorite Item 2"],
-            "Link": ["http://example.com/item1", "http://example.com/item2"],
+            "Website": ["http://example.com/item1", "http://example.com/item2"],
+            "Image": ["http://example.com/item1", "http://example.com/item2"],
             "Price": [10.99, 20.49],
             "Product": ["Item 1", "Item 2"],
-            "Website": ["Website A", "Website B"],
+            "Ratings": [4.4, 5],
         }
 
         # Act

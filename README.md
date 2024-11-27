@@ -25,7 +25,8 @@
 :movie_camera: Checkout our video
 ---
 
-https://github.com/user-attachments/assets/39785a3c-5a0f-46cc-8b87-db6da02b9a70
+
+https://github.com/user-attachments/assets/22538cce-7bbf-4740-bcec-d099dc59d132
 
 
 

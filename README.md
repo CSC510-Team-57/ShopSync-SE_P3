@@ -82,32 +82,32 @@ https://github.com/user-attachments/assets/3f7740ea-8326-4627-8c4f-3800d20a09fb
     <td valign="top"> 
       <p style="color: #FF7A59"> Login Page
       </p>
-      <a href="./media/Login.jpg"> 
-        <img src="./media/Login.jpg" >      
+      <a href="./media/LoginScreen.png"> 
+        <img src="./media/LoginScreen.png" >      
       </a>
     </td>
     <td valign="top">
-     <p style="color: #FF7A59"> Signup Page
+     <p style="color: #FF7A59"> Favorites Page
       </p>
-     <a href="./media/Signup.jpg">
-        <img src="./media/Signup.jpg"> 
+     <a href="./media/FavoritesScreen.png">
+        <img src="./media/FavoritesScreen.png"> 
       </a> 
     </td>
   </tr>
   
   <tr style="background: #010203;"> 
     <td valign="top">
-     <p style="color: #FF7A59"> Home
+     <p style="color: #FF7A59"> Home Page
       </p>
-     <a href="./media/Home.png">
-        <img src="./media/Home.png"> 
+     <a href="./media/HomeScreen.png">
+        <img src="./media/HomeScreen.png"> 
       </a> 
     </td>
     <td valign="top"> 
-      <p style="color: #FF7A59"> Favourites
+      <p style="color: #FF7A59"> History Page
       </p>
-      <a href="./media/Favourites.png"> 
-        <img src="./media/Favourites.png">      
+      <a href="./media/HistoryScreen.png"> 
+        <img src="./media/HistoryScreen.png">      
       </a>
     </td>
   </tr>

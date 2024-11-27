@@ -131,32 +131,30 @@ https://github.com/user-attachments/assets/3f7740ea-8326-4627-8c4f-3800d20a09fb
 3. With Shopsync, users can save time and money, enhancing their online shopping experience.
 
 Δ Deltas
-Phase 5:
-- [x] Implemented a robust user authentication system using Firestore for secure access and a personalized experience.
-- [x] Added a dedicated favorites page, allowing users to store and manage preferred items with Firestore persistence.
-- [x] Introduced comprehensive sorting and filtering options, including ascending/descending order and checkboxes for individual company filtering.
-- [x] Implemented a reset button for users to quickly clear selections and start fresh.
-- [x] Enhanced navigation with a sidebar feature for intuitive access to different sections of the application.
-- [x] Significantly improved the user interface with consistent text sizes, interactive checkboxes, and filter buttons for a more engaging experience.
+Phase 6:
+- [x] Implemented Search History so a user can see what they have previously searched for
+- [x] Implemented Cookies to allow for consistent login behavior, if someone was to refresh the page they are not logged out
+- [x] When searching you can now see the images of the items
+- [x] Ratings are now gotten from the websites we search and no longer randomly generated for websites which support it
+- [x] You can now easily select multiple favorites and remove them as you need
 
 :golf: Future Roadmap
 ---
-- Search History: Users can revisit previous searches for a convenient shopping experience.
-- Cookies: Enhances user experience by remembering preferences and maintaining session information.
-- Images for Items: Each item in search results includes images for better visual engagement.
-- Remove from Favorites: Users can easily manage their favorites by removing items as needed.
+- UI Overhaul: With all the new features, a more refined UI would go a long way to tie the program together.
+- Enhanced Favorites Selection: Having the add favorites functionality to more closely resemble the remove functionality would improve user experience.
+- Enhanced History: Allow the user to select a search in history and see everything which was found previously.
 
 :sparkles: Contributors
 ---
-- **Devyash Shah** - [devyash2930](https://github.com/devyash2930)
-- **Smit Raval** - [smitraval24 ](https://github.com/smitraval24)
-- **Vatsal Patel** - [vatsal-dp](https://github.com/vatsal-dp)
+- **Charlie Eastin** - [Charlie Eastin](https://github.com/Charlie-Eastin)
+- **Aastha Gaudani** - [Aastha Gaudani](https://github.com/Shawty2084)
+- **Spencer Kersey** - [Spencer Kersey](https://github.com/SpencerKersey)
 
 ---
 
 :bulb: Acknowledgement
 ---
-We would like to thank Professor Dr Timothy Menzies for helping us understand the process of building a good Software Engineering project. We would also like to thank the teaching assistants Liwen, Andre Lustosa, Sam Gilson, Rishabh Jain, and Amirali for their support throughout the project. We would also like to extend our gratitude to the previous groups: https://github.com/Kashika08/ShopSync and https://github.com/Neel317/ShopSync
+We would like to thank Professor Dr Timothy Menzies for helping us understand the process of building a good Software Engineering project. We would also like to thank the teaching assistants Liwen, Andre Lustosa, Sam Gilson, Rishabh Jain, and Amirali for their support throughout the project. We would also like to extend our gratitude to the previous groups: https://github.com/devyash2930/ShopSync-SE, https://github.com/Kashika08/ShopSync, and https://github.com/Neel317/ShopSync
 
 https://streamlit.io/
 
@@ -164,5 +162,5 @@ https://shields.io/
 
 :email: Support
 ---
-For any inquiries, suggestions, or support requests, please contact us at [info@shopsync.com](mailto:info@shopsync.com).
+For any inquiries, suggestions, or support requests, please contact us at [spencerkersey7702@gmail.com](mailto:spencerkersey7702@gmail.com).
 

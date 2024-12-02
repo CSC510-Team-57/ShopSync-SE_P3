@@ -745,17 +745,28 @@ def app():
             #st.dataframe(st.session_state.fav[['Product', 'Description', 'Price', 'Website', 'Ratings', 'Image']], use_container_width=True)
 
             # Save the favorites table to Firestore
-            user = auth.get_user_by_email(st.session_state.user_email)  # Replace with actual user email
+            user = auth.get_user_by_email(st.session_state.user_email) 
             uid = user.uid
+
+            
 
             # Reference to the user's document in "favourites" collection
             user_fav_ref = db.collection("favourites").document(uid)
 
+            user_fav_doc = user_fav_ref.get()
+            if user_fav_doc.exists:
+                existing_favorites = pd.DataFrame(user_fav_doc.to_dict())
+            else:
+                existing_favorites = pd.DataFrame(columns=['Product', 'Description', 'Price', 'Website', 'Ratings', 'Image'])
+
+            updated_favorites = pd.concat([existing_favorites, fav_row], axis=0).drop_duplicates().reset_index(drop=True)
             # Convert favorites table to a dictionary format compatible with Firestore
-            user_fav_data = st.session_state.fav[['Product', 'Description', 'Price', 'Website', 'Ratings', 'Image']].to_dict(orient='list')
+            user_fav_data = updated_favorites.to_dict(orient='list')
 
             # Save to Firestore
             user_fav_ref.set(user_fav_data)
+
+#            st.session_state = updated_favorites
 
             st.success(f"{st.session_state.dataframe.loc[selected_index, 'Product']} has been added to your favorites!")
         

@@ -14,7 +14,7 @@ def initialize_firebase(mock=False):
             firebase_admin.initialize_app()
         return True
 
-    json_path = os.path.join(os.path.dirname(__file__), 'test-a2406-firebase-adminsdk-7r6vq-e3c4935c0d.json')
+    json_path = os.path.join(os.path.dirname(__file__), 'shopsync-9ecdc-firebase-adminsdk-60nyc-ec3901d5d7.json')
     try:
         cred = credentials.Certificate(json_path)
         firebase_admin.initialize_app(cred)

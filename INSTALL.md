@@ -78,3 +78,25 @@ Before you begin, ensure you have the following installed:
     cd src/frontend
     streamlit run app.py
     ```
+## Running Tests
+1. To run the tests you need to open 3 terminals/bash
+
+2. In the first, run:
+
+   ```cd src```
+    
+     Mac/Linux: ```python3 main.py```
+    
+     Windows: ```python main.py```
+
+3. In the second, run:
+
+   ```bash
+    cd src/frontend
+    streamlit run app.py
+    ```
+4. Finally, in the third run:
+
+   ```bash
+    pytest
+    ```
